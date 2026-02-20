@@ -1,0 +1,502 @@
+/*reset*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/*variables CSS*/
+:root {
+  --primary: #3498db;
+  /* blue-600 */
+  --secondary: #2c3e50;
+  /* blue-grey-800 */
+  --accent: #e74c3c;
+  /* red */
+  --light: #ecf0f1;
+  /* blue-grey-50 */
+  --dark: #34495e;
+  /* blue-grey-800 */
+  --text: #333;
+  /* blue-grey-900 */
+  --text-light: #666;
+  /* grey-700 */
+  --white: #ffffff;
+  /* white */
+  --border: #ddd;
+  /* grey-300 */
+  --shadow: rgba(0, 0, 0, 0.1);
+
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 40px;
+  --spacing-xl: 60px;
+  --border-radius: 8px;
+  --transition: all 0.3s ease;
+}
+/*base*/
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: var(--text);
+  line-height: 1.6;
+}
+/* img{
+max-width: 100%;
+height: auto;
+display: block;
+} */
+.logo-cv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cv {
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: var(--primary);
+}
+/* ======INDEX */
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+/* header et navigation */
+.header {
+  background-color: var(--secondary);
+  color: var(--white);
+  padding: var(--spacing-sm) 0;
+  box-shadow: 0 2px 10px var(--shadow);
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--white);
+  letter-spacing: 1px;
+}
+.nav {
+  display: flex;
+  justify-content: end;
+}
+.nav-links {
+  margin-right: var(--spacing-xs);
+}
+.nav ul {
+  list-style: none;
+  gap: var(--spacing-md);
+}
+.nav a {
+  font-weight: 500;
+  padding: var(--spacing-xs);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+  font-size: 0.5rem;
+  text-decoration: none;
+  color: var(--primary);
+}
+/* user interface user experience Réflechir en UI UX  */
+.nav a:hover,
+.nav a.active {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+/* hero section */
+.hero {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: var(--white);
+  padding: var(--spacing-lg);
+  text-align: center;
+}
+.hero-title {
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-md);
+  font-weight: 700;
+  /* font-weight 700 egal bold */
+}
+.hero-text {
+  font-size: 1rem;
+  margin-bottom: var(--spacing-lg);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+}
+/* button ENVOI VERS MAILS*/
+.btn {
+  display: inline-block;
+  padding: var(--spacing-sm) var(--spacing-md);
+  margin: auto;
+  border-radius: var(--border-radius);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  transition: var(--transition);
+}
+.btn-primary {
+  background-color: var(--accent);
+  color: var(--white);
+}
+.btn-primary:hover {
+  background-color: red;
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+.btn-secondary {
+  background-color: var(--light);
+  color: var(--text);
+  border: 2px solid var(--border);
+}
+.btn-secondary:hover {
+  background-color: var(--border);
+}
+/* service section */
+.service {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--white);
+}
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  color: var(--secondary);
+  margin-bottom: var(--spacing-lg);
+}
+.service-grid {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+.service-card {
+  flex: 1 1 calc(33.333% - var(--spacing-md));
+  min-width: 280px;
+  background-color: var(--white);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 15px var(--shadow);
+  text-align: center;
+  transition: var(--transition);
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.service-icone {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-sm);
+}
+.service-card h3 {
+  color: var(--secondary);
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+.service-card p {
+  color: var(--text-light);
+  line-height: 1.8;
+}
+/* About et Contact page */
+.main-content {
+  padding: var(--spacing-xl) 0;
+  background-color: var(--white);
+}
+.page-title {
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+}
+
+/* style ======ABOUT======*/
+.about-intro {
+  display: flex;
+  gap: var(--spacing-lg);
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--spacing-xl);
+  padding-top: var(--spacing-xs);
+  background-color: var(--light);
+  border-radius: var(--border-radius);
+}
+.profil-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--primary);
+  flex-shrink: 0;
+}
+.intro-text {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+  margin: 0 auto var(--spacing-lg);
+  max-width: 800px;
+}
+.about-intro-text h2 {
+  color: var(--secondary);
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+}
+.about-intro-text p {
+  color: var(--text-light);
+  line-height: 1.8;
+}
+.about-section {
+  margin-top: var(--spacing-lg);
+}
+.about-section h2 {
+  color: var(--secondary);
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+  padding-bottom: var(--spacing-xs);
+  border-bottom: 3px solid var(--primary);
+}
+.about-section h3 {
+  color: var(--dark);
+  font-size: 1.25em;
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+}
+.about-section p {
+  color: var(--text-light);
+  line-height: 1.8;
+  margin: var(--spacing-xs);
+}
+.timeline-list,
+.skills-list,
+.interests-list {
+  color: var(--text-light);
+  line-height: 2;
+  list-style-position: inside;
+}
+.timeline-list li,
+.interests-list li {
+  padding: var(--spacing-xs) 0;
+  border-left: 3px solid var(--primary);
+  padding-left: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs);
+}
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-md);
+}
+.skills-category {
+  flex: 1;
+  background-color: var(--light);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+}
+.skills-list {
+  list-style-type: none;
+}
+.skills-list li {
+  padding: var(--spacing-xs) 0;
+  padding-left: var(--spacing-md);
+  position: relative;
+}
+.skills-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 700px;
+}
+/*style  ======CONTACT */
+.contact-info {
+  text-align: center;
+  background-color: var(--light);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-xs);
+  height: fit-content;
+  margin: var(--spacing-xs);
+}
+.contact-form {
+  padding: var(--spacing-xs);
+  background-color: var(--light);
+  border-radius: var(--border-radius);
+  margin: var(--spacing-xs);
+  margin-bottom: var(--spacing-xl);
+}
+.contact-form-section h3,
+.contact-info h3 {
+  color: var(--secondary);
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-md);
+}
+/* form style */
+
+.form-row {
+  display: flex;
+  gap: var(--spacing-md);
+}
+.form-group {
+  margin-bottom: var(--spacing-md);
+  flex: 1;
+  display: block;
+  color: var(--dark);
+  font-weight: 500;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: var(--spacing-xs);
+  width: 100%;
+  border: 2px solid var(--border);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: var(--transition);
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+.form-group textarea {
+  resize: vertical;
+}
+.radio-group {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+.radio-group input[type="radio"] {
+  width: auto;
+  margin-right: var(--spacing-xs);
+}
+.radio-group label {
+  margin: 0;
+}
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+.checkbox-group input[type="checkbox"] {
+  width: auto;
+}
+.checkbox-group label {
+  margin: 0;
+}
+fieldset {
+  border: 2px solid var(--border);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+}
+legend {
+  padding: 0 var(--spacing-sm);
+  color: var(--dark);
+  font-weight: 500;
+}
+.form-button {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+.form-button .btn {
+  flex: 1;
+}
+.form-note {
+  margin-top: var(--spacing-sm);
+  color: var(--text-light);
+  text-align: center;
+}
+/* contact style */
+
+.contact-details {
+  line-height: 2;
+}
+.contact-details dt {
+  color: var(--dark);
+  font-weight: bold;
+  margin-top: var(--spacing-xs);
+}
+.contact-details dd {
+  color: var(--text-light);
+  margin-left: 0;
+  padding-left: var(--spacing-md);
+}
+.contact-details a {
+  color: var(--primary);
+}
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+/* footer */
+.footer {
+  background-color: var(--secondary);
+  color: var(--white);
+  padding: var(--spacing-lg) 0;
+  text-align: center;
+}
+.footer p {
+  margin: var(--spacing-xs) 0;
+}
+.footer-contact {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+/* ////////////////////// Responsive : Conception adaptative au desktop, mobile et tablet ////////////////////// */
+
+@media (width >=768px) {
+  .header {
+    padding: var(--spacing-md);
+  }
+  .logo {
+    font-size: clamp(1em, 2em, 3em);
+    /* clamp utile? */
+  }
+  .nav-links a {
+    font-size: clamp(0.5em, 1.5em, 2em);
+  }
+  .nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-lg);
+  }
+  .nav-links a {
+    font-size: 1rem;
+  }
+  .menu-hamburger {
+    display: none;
+  }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (width>=1024px) {
+  .header {
+    padding: var(--spacing-xl);
+  }
+  .nav ul {
+    gap: var(--spacing-xl);
+  }
+  .grid-contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-info dt {
+    margin-bottom: var(--spacing-xs);
+  }
+  .contact-info dd {
+    margin-bottom: var(--spacing-md);
+  }
+}
