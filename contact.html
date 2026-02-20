@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
+=======
+<!doctype html>
+>>>>>>> cbb744423cc7f48b34d3882407717010c60a833a
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contact</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="css\style.css" />
   </head>
   <body>
@@ -169,4 +174,346 @@
       
   </footer>
 </body>
+=======
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="font-serif text-gray-800">
+    <header class="bg-slate-800 text-white py-4 shadow-lg">
+      <div class="container mx-auto px-6">
+        <div class="flex justify-between items-center">
+          <h1 class="text-2xl md:text-3xl font-bold tracking-wide">
+            Matthieu Ruel
+          </h1>
+
+          <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+          <label
+            for="menu-toggle"
+            class="md:hidden cursor-pointer flex flex-col gap-1.5 z-50"
+          >
+            <span class="block w-7 h-0.5 bg-white transition-all"></span>
+            <span class="block w-7 h-0.5 bg-white transition-all"></span>
+            <span class="block w-7 h-0.5 bg-white transition-all"></span>
+          </label>
+
+          <nav class="hidden md:block">
+            <ul class="flex gap-6 md:gap-10">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-white text-sm md:text-base font-medium px-2 py-1 rounded-lg hover:bg-blue-500 transition-all duration-300"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-white text-sm md:text-base font-medium px-2 py-1 rounded-lg hover:bg-blue-500 transition-all duration-300"
+                  >À propos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-white text-sm md:text-base font-medium px-2 py-1 rounded-lg bg-blue-500 hover:bg-blue-600 transition-all duration-300"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="download/CvMatthieuRUEL.pdf"
+                  download="CV-Matthieu-RUEL.pdf"
+                  class="text-white text-sm md:text-base font-medium px-2 py-1 rounded-lg hover:bg-blue-500 transition-all duration-300"
+                  >CV</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <nav
+            class="hidden peer-checked:flex peer-checked:md:hidden absolute top-16 left-0 right-0 bg-slate-800 flex-col items-center py-6 shadow-lg z-40"
+          >
+            <ul class="flex flex-col gap-4 w-full text-center">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-white text-base font-medium px-4 py-2 block hover:bg-blue-500 transition-all duration-300"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-white text-base font-medium px-4 py-2 block hover:bg-blue-500 transition-all duration-300"
+                  >À propos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="text-white text-base font-medium px-4 py-2 block bg-blue-500 hover:bg-blue-600 transition-all duration-300"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="download/CvMatthieuRUEL.pdf"
+                  download="CV-Matthieu-RUEL.pdf"
+                  class="text-white text-base font-medium px-4 py-2 block hover:bg-blue-500 transition-all duration-300"
+                  >CV</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section
+      class="bg-gradient-to-br from-blue-500 to-slate-800 text-white py-16 md:py-20 text-center"
+    >
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Contactez-moi</h2>
+        <p class="text-base md:text-lg max-w-2xl mx-auto leading-loose">
+          N'hésitez pas à me contacter via le formulaire ci-dessous ou par
+          Mail/Téléphone.
+        </p>
+      </div>
+    </section>
+    <main class="py-16 md:py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="lg:grid lg:grid-cols-2 gap-6">
+          <section>
+            <form
+              action="#"
+              method="post"
+              class="p-6 bg-gray-100 rounded-lg mb-16"
+            >
+              <h3 class="text-slate-800 text-2xl mb-6 font-semibold">
+                Formulaire de contact
+              </h3>
+              <fieldset
+                class="border-2 border-gray-300 rounded-lg mb-6 py-6 px-2 md:p-6"
+              >
+                <legend class="px-4 text-slate-700 font-medium">
+                  Civilité:
+                </legend>
+                <div class="flex gap-2 items-center md:gap-6">
+                  <input
+                    type="radio"
+                    id="madame"
+                    name="civilite"
+                    value="mme"
+                    required
+                    class="w-auto mr-2"
+                  />
+                  <label for="madame" class="m-0"> Madame </label>
+                  <input
+                    type="radio"
+                    id="monsieur"
+                    name="civilite"
+                    value="m."
+                    required
+                    class="w-auto mr-2"
+                  />
+                  <label for="monsieur" class="m-0"> Monsieur </label>
+                </div>
+              </fieldset>
+              <div class="flex gap-6">
+                <div class="mb-6 flex-1">
+                  <label for="nom" class="block mb-2 text-slate-700 font-medium"
+                    >Nom*:
+                  </label>
+                  <input
+                    type="text"
+                    name="nom"
+                    id="nom"
+                    required
+                    class="p-2 w-full border-2 border-gray-300 rounded-lg text-base font-serif transition-all duration-300 focus:outline-none focus:border-blue-500 focus:shadow-lg focus:shadow-blue-500/10"
+                  />
+                </div>
+                <div class="mb-6 flex-1">
+                  <label
+                    for="prenom"
+                    class="block mb-2 text-slate-700 font-medium"
+                    >Prénom*:
+                  </label>
+                  <input
+                    type="text"
+                    name="prenom"
+                    id="prenom"
+                    required
+                    class="p-2 w-full border-2 border-gray-300 rounded-lg text-base font-serif transition-all duration-300 focus:outline-none focus:border-blue-500 focus:shadow-lg focus:shadow-blue-500/10"
+                  />
+                </div>
+              </div>
+              <div class="flex gap-6">
+                <div class="mb-6 flex-1">
+                  <label
+                    for="email"
+                    class="block mb-2 text-slate-700 font-medium"
+                    >Email*:
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    required
+                    class="p-2 w-full border-2 border-gray-300 rounded-lg text-base font-serif transition-all duration-300 focus:outline-none focus:border-blue-500 focus:shadow-lg focus:shadow-blue-500/10"
+                  />
+                </div>
+                <div class="mb-6 flex-1">
+                  <label
+                    for="telephone"
+                    class="block mb-2 text-slate-700 font-medium"
+                    >Téléphone:
+                  </label>
+                  <input
+                    type="tel"
+                    name="telephone"
+                    id="telephone"
+                    placeholder="06 12 34 56 78"
+                    class="p-2 w-full border-2 border-gray-300 rounded-lg text-base font-serif transition-all duration-300 focus:outline-none focus:border-blue-500 focus:shadow-lg focus:shadow-blue-500/10"
+                  />
+                </div>
+              </div>
+              <div class="mb-6">
+                <label
+                  for="entreprise"
+                  class="block mb-2 text-slate-700 font-medium"
+                  >Entreprise :</label
+                >
+                <input
+                  type="text"
+                  id="entreprise"
+                  name="entreprise"
+                  class="p-2 w-full border-2 border-gray-300 rounded-lg text-base font-serif transition-all duration-300 focus:outline-none focus:border-blue-500 focus:shadow-lg focus:shadow-blue-500/10"
+                />
+              </div>
+              <div class="mb-6">
+                <label for="sujet" class="block mb-2 text-slate-700 font-medium"
+                  >Sujet:</label
+                >
+                <select
+                  id="sujet"
+                  name="sujet"
+                  required
+                  class="p-2 w-full border-2 border-gray-300 rounded-lg text-base font-serif transition-all duration-300 focus:outline-none focus:border-blue-500 focus:shadow-lg focus:shadow-blue-500/10"
+                >
+                  <option value="">Sélectionner un sujet</option>
+                  <option value="nfo">Information</option>
+                  <option value="devis">Devis</option>
+                  <option value="projet">Projet</option>
+                  <option value="autre">Autre</option>
+                </select>
+              </div>
+              <div class="mb-6">
+                <label
+                  for="message"
+                  class="block mb-2 text-slate-700 font-medium"
+                  >Message*:</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  required
+                  class="p-2 w-full border-2 border-gray-300 rounded-lg text-base font-serif transition-all duration-300 resize-y focus:outline-none focus:border-blue-500 focus:shadow-lg focus:shadow-blue-500/10"
+                ></textarea>
+              </div>
+              <div class="flex items-center gap-4 mb-6">
+                <input
+                  type="checkbox"
+                  id="rgpd"
+                  name="rgpd"
+                  required
+                  class="w-auto"
+                />
+                <label for="rgpd" class="m-0">
+                  J'accepte que mes données soient utilisées pour me
+                  recontacter.
+                </label>
+              </div>
+              <div class="flex gap-4 mt-6">
+                <button
+                  type="submit"
+                  class="flex-1 py-2 px-2 md:px-6 md:py-4 bg-red-500 text-white font-bold text-base rounded-lg transition-all duration-300 hover:bg-red-600 hover:-translate-y-1 hover:shadow-xl"
+                >
+                  Envoyer
+                </button>
+                <button
+                  type="reset"
+                  class="flex-1 py-2 px-2 md:px-6 md:py-4 bg-gray-200 text-gray-800 font-bold text-base rounded-lg border-2 border-gray-300 transition-all duration-300 hover:bg-gray-300"
+                >
+                  Réinitialiser
+                </button>
+              </div>
+              <p class="mt-4 text-gray-600 text-center">
+                <small>* Champs obligatoires</small>
+              </p>
+            </form>
+          </section>
+          <section class="text-center bg-gray-100 rounded-lg p-6 h-fit">
+            <h3 class="text-slate-800 text-2xl mb-6 font-semibold">
+              Autres moyens de contact
+            </h3>
+            <dl class="leading-loose">
+              <dt class="text-slate-700 font-bold mt-2">Email :</dt>
+              <dd class="text-gray-600 mb-6">
+                <a
+                  href="mailto:matthieuruel60@gmail.com"
+                  class="text-blue-500 hover:underline"
+                  >matthieuruel60@gmail.com</a
+                >
+              </dd>
+              <dt class="text-slate-700 font-bold mt-2">Téléphone :</dt>
+              <dd class="text-gray-600 mb-6">
+                <a href="tel:+33744408144" class="text-blue-500 hover:underline"
+                  >0744408144</a
+                >
+              </dd>
+              <dt class="text-slate-700 font-bold mt-2">Linkedin :</dt>
+              <dd class="text-gray-600 mb-6">
+                <a
+                  href="https://www.linkedin.com/in/matthieuruel/"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Matthieu Ruel
+                </a>
+              </dd>
+              <dt class="text-slate-700 font-bold mt-2">GitHub :</dt>
+              <dd class="text-gray-600 mb-6">
+                <a
+                  href="https://github.com/mnoc-dev"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Matthieu Ruel
+                </a>
+              </dd>
+              <dt class="text-slate-700 font-bold mt-2">Disponibilité :</dt>
+              <dd class="text-gray-600 mb-6">Du lundi au vendredi: 9h/18h</dd>
+            </dl>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-slate-800 text-white py-10 text-center">
+      <div class="container mx-auto px-6">
+        <p class="my-2">&copy; MatthieuRuel-2026</p>
+        <a
+          class="text-base opacity-70 hover:opacity-100 transition-opacity"
+          href="mailto:matthieuruel60@gmail.com"
+          >matthieuruel60@gmail.com</a
+        >
+        <p class="my-2">
+          <a
+            class="text-base opacity-70 hover:opacity-100 transition-opacity"
+            href="tel:+33744408144"
+            >07 44 40 81 44</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+>>>>>>> cbb744423cc7f48b34d3882407717010c60a833a
 </html>
